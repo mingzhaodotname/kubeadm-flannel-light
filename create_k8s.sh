@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-cd k8s/
+#cd k8s/
 pwd
 
 kubeadm init --pod-network-cidr=10.244.0.0/16
