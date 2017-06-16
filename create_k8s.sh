@@ -27,6 +27,9 @@ kubectl create -f kube-flannel.yml
 echo "create dashboard ..."
 kubectl create -f kubernetes-dashboard.yaml
 
+echo "create anonymous role binding..."
+kubectl create -f anonymous-rbac.yml
+
 sleep 10
 kubectl get pods --all-namespaces
 
